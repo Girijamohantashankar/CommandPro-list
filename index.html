@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommandPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/img/banner.jpg" alt="logo">
+                </div>
+                <div class="head">
+                    <h3>Incident Open Action Tracker</h3>
+                    <p>ICS 233-CG</p>
+                </div>
+            </nav>
+            <div class="baaner">
+                <h1>List Of Actions <span>(Incident Location-10)</span></h1>
+
+                <div class="records-text">
+                    <div class="records">
+                        <p><b>Showing 1 - 4 of 4 Records</b></p>
+                    </div>
+                    <div class="record-box">
+                        <select name="number" class="record-num" id="number">
+                            <option value="" disabled selected hidden>10</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                        </select>
+                        <label class="font-text">Records per Page</label>
+                    </div>
+                </div>
+
+
+                <div class="row-text">
+                    <div class="col-2">
+                        <div class="card" id="card2">
+                            <h4>1. Lorem lpsum</h4>
+                            <div class="list-image">
+                                <img src="/img/edit.png" alt="edit">
+                                <img src="/img/trash.png" alt="trans" onclick="mydelete2()">
+                            </div>
+                            <div class="text-label">
+                                <label><b>For/Poc:</b> HON CIRCLE;</label>
+                                <label><b>POC Briefed:</b>Miles & More</label>
+                                <br>
+                                <label><b>Start date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Target date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Actual date:</b> 1/29/2010 6:30:00 PM</label>
+                            </div>
+                        </div>
+                        <div class="card" id="card">
+                            <h4>2. Lorem lpsum</h4>
+                            <div class="list-image">
+                                <img src="/img/edit.png" alt="edit">
+                                <img src="/img/trash.png" alt="trans" onclick="mydelete()">
+                            </div>
+                            <div class="text-label">
+                                <label><b>For/Poc:</b> HON CIRCLE;</label>
+                                <label><b>POC Briefed:</b>Miles & More</label>
+                                <br>
+                                <label><b>Start date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Target date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Actual date:</b> 1/29/2010 6:30:00 PM</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card" id="card3">
+                            <h4>3. Lorem lpsum</h4>
+                            <div class="list-image">
+                                <img src="/img/edit.png" alt="edit">
+                                <img src="/img/trash.png" alt="trans" onclick="mydelete3()">
+                            </div>
+                            <div class="text-label">
+                                <label><b>For/Poc:</b> HON CIRCLE;</label>
+                                <label><b>POC Briefed:</b>Miles & More</label>
+                                <br>
+                                <label><b>Start date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Target date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Actual date:</b> 1/29/2010 6:30:00 PM</label>
+                            </div>
+                        </div>
+                        <div class="card" id="card4">
+                            <h4>4. Lorem lpsum</h4>
+                            <div class="list-image">
+                                <img src="/img/edit.png" alt="edit">
+                                <img src="/img/trash.png" alt="trans" onclick="mydelete4()">
+                            </div>
+                            <div class="text-label">
+                                <label><b>For/Poc:</b> HON CIRCLE;</label>
+                                <label><b>POC Briefed:</b>Miles & More</label>
+                                <br>
+                                <label><b>Start date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Target date:</b> 1/29/2010 6:30:00 PM</label>
+                                <label><b>Actual date:</b> 1/29/2010 6:30:00 PM</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-foot">
+                    <div class="page">
+                        <p><b>Page</b><span
+                                class="active">1</span><span>2</span><span>3</span><span>4</span><span>5</span></p>
+                    </div>
+                    <div class="showing">
+                        <h5>Showing 1 - 4 of 4 Records</h5>
+                    </div>
+                    <div class="page-num">
+                        <select name="number" class="page-num">
+                            <option value="" disabled selected hidden>10</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                        </select>
+                        <label class="font-text">Records per Page</label>
+                    </div>
+                </div>
+            </div>
+            <div id="myDIV">
+                <div class="action-text">
+                    <div class="text-action">
+                        <div class="text">
+                            <h2>New Actions</h2>
+                        </div>
+                        <div class="nav-btn">
+                            <button class="new-line">Insert New Line</button>
+                            <button class="new-line">Recorder List</button>
+                            <label class="hide">Hide
+                                <img src="/img/arrow.png" alt="arrow" onclick="myFunction()" id="hide">
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <label id="lblsuccess" class="text-success" style="display: none;">
+                        Line No:
+                    </label>
+                    <form id="addForm">
+                        <div class="row">
+                            <div class="input-text">
+                                <label for=""> Line No:</label>
+                                <input type="text" placeholder="At Last" onkeyup="toggleButton(this, 'submit')"
+                                    class="form-control" id="item">
+                                <label class="poc-label"> For/Poc:</label>
+                                <input type="text" class="poc-input" onkeyup="toggleButton(this, 'submit')"
+                                    id="item-in">
+                                <br>
+                                <br>
+                                <label for=""> Item:</label>
+                                <input type="checkbox" class="check">
+                                <label for="" class="poc"> Poc Briefed:</label>
+                                <input type="text" placeholder="">
+                                <br>
+                                <br>
+                                <label for=""> Status:</label>
+                                <select name="status" class="status" id="status">
+                                    <option value="" disabled selected hidden>--Select--</option>
+                                    <option value="Html">Html</option>
+                                    <option value="Css">Css</option>
+                                    <option value="javascript">javscript</option>
+                                    <option value="JQuery">JQuery</option>
+                                </select>
+                            </div>
+                            <div class="submit-btn">
+                                <input type="submit" class="btn btn-dark" id="submit" value="Submit">
+                                <input type="submit" class="btn-button1" value="Save & Exit">
+                                <input type="submit" class="btn-button2" value=" Cancle">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="date-input">
+                        <label class="start-input">Start Date:</label>
+                        <input type="date">
+                        <label class="font-text">Hr:</label>
+                        <select name="number" class="hours-input">
+                            <option value="" disabled selected hidden>18</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                        </select>
+                        <label class="font-text">Min:</label>
+                        <select name="number" class="hours-input">
+                            <option value="" disabled selected hidden>38</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                            <option value="">32</option>
+                            <option value="">33</option>
+                            <option value="">34</option>
+                            <option value="">35</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                            <option value="">44</option>
+                            <option value="">45</option>
+                            <option value="">46</option>
+                            <option value="">47</option>
+                            <option value="">48</option>
+                            <option value="">49</option>
+                        </select>
+                    </div>
+                    <div class="date-input1">
+                        <label class="start-input">Target Date:</label>
+                        <input type="date">
+                        <label class="font-text">Hr:</label>
+                        <select name="number" class="hours-input">
+                            <option value="" disabled selected hidden>18</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                        </select>
+                        <label class="font-text">Min:</label>
+                        <select name="number" class="hours-input">
+                            <option value="" disabled selected hidden>38</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                            <option value="">32</option>
+                            <option value="">33</option>
+                            <option value="">34</option>
+                            <option value="">35</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                            <option value="">44</option>
+                            <option value="">45</option>
+                            <option value="">46</option>
+                            <option value="">47</option>
+                            <option value="">48</option>
+                            <option value="">49</option>
+                        </select>
+                    </div>
+                    <div class="date-input3">
+                        <label class="start-input">Actual Date:</label>
+                        <input type="date">
+                        <label class="font-text">Hr:</label>
+                        <select name="number" class="hours-input">
+                            <option value="" disabled selected hidden>18</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                        </select>
+                        <label class="font-text">Min:</label>
+                        <select name="number" class="hours-input">
+                            <option value="" disabled selected hidden>38</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                            <option value="">32</option>
+                            <option value="">33</option>
+                            <option value="">34</option>
+                            <option value="">35</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                            <option value="">44</option>
+                            <option value="">45</option>
+                            <option value="">46</option>
+                            <option value="">47</option>
+                            <option value="">48</option>
+                            <option value="">49</option>
+                        </select>
+                    </div>
+                </div>
+                <form id="addForm">
+                    <ul class="list-group" id="items"></ul>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- <button class="show" id="show">Show More</button> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
